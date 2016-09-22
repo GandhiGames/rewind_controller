@@ -13,9 +13,6 @@ namespace RewindController
 		
 		public override void Execute ()
 		{
-			if (dir == Vector2.zero)
-				return;
-			
 			undoDir = -dir;
 			
 			character.Translate (dir, Space.World);
